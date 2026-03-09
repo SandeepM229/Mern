@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("Enter min: "))
+        let b = parseInt(prompt("Enter max: "))
+        
+        document.write("<b>Using <i>for</i> loop</b><br>")
+        for(let k = a; k<=b; k++){
+            document.write(`${k} `)
+        }
+
+        document.write("<br><br><b>Using <i>while</i> loop</b><br>")
+        let k = a
+        while(k<=b){
+            document.write(`${k++} `)
+        }
+
+        document.write("<br><br><b>Using <i>do-while</i> loop</b><br>")
+        k = a
+        do{
+            document.write(`${k++} `)
+        }
+        while(k<=b)
+
+    </script>
+</body>
+</html>
