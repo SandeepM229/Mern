@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Predefined Objects</title>
+</head>
+<body>
+    <script>
+        document.write("-------JS-------<br>")
+        let user_choice = window.confirm("Click OK if you want to learn JS")
+        if(user_choice){
+            let num = 1.2
+            document.write(`Rounded value of ${num} is : ${Math.round(num)}<br>`)
+            document.write(`2 power 3 is: ${Math.pow(2,3)}<br>`)
+            let msg = "Learn JS"
+            document.write(`Original String : ${msg}<br>`)
+            document.write(`Lowercase String: ${msg.toLowerCase()}<br>`)
+            document.write(`First character: ${msg.charAt(0)}`)
+        }
+        else{
+            document.write("Go watch reels")
+        }
+    </script>
+</body>
+</html>
