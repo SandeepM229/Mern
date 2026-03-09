@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function turnOn(imageId){
+            let img = document.getElementById(imageId);
+            if(img.src.includes("on.png")){
+                img.src = "off.png";
+            }
+            else{
+                img.src="on.png";
+            }
+        }
+    </script>
+</head>
+<body>
+    <img id="img1" src="off.png" width="120" onclick="turnOn('img1')">
+</body>
+</html>
