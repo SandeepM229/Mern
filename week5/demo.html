@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h2>Factorial of a given number</h2>
+    <input type="number" id="num">
+    <button onclick="findFactorail()">Calculate</button>
+    <p id="result"></p>
+    <br>
+    <h2>Fibonacci Series</h2>
+    <input type="number" id="num2">
+    <button onclick="fibi()">Calculate</button>
+    <p id="result2"></p>
+    <script>
+        function findFactorail(){
+            let n = document.getElementById("num").value
+            let fact = 1
+            for(let i=2; i<=n; i++){
+                fact*=i
+            }
+            document.getElementById("result").innerHTML = 
+                "Factorial of " + n + " is " + fact
+        }
+        function fibi(){
+            document.getElementById("result2").innerHTML = ""
+            let n = document.getElementById("num2").value
+            let a = 0, b = 1
+            while(n>0){
+                document.getElementById("result2").innerHTML += `  ${a}  `
+                let temp = b
+                b = a + b
+                a = temp
+                n--;
+            }
+        }
+    </script>
+</body>
+</html>
