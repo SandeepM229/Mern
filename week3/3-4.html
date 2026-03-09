@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function showResponsiveMessage(){
+            document.getElementById("ouput").innerHTML = "This page is now in MOBILE VIEW (Responsive)";
+        }
+        function show404Error(){
+            alert("404 error: page not found");
+        }
+        function showConsoleMessage(){
+            console.log("user clicked help button");
+        }
+    </script>
+</head>
+<body onload="showResponsiveMessage()">
+    <h2>Different Output methods</h2>
+    <button onclick="show404Error()">Open invalid page</button>
+    <button onclick="showConsoleMessage()">help</button>   
+    <p id="ouput"></p>
+</body>
+</html>
