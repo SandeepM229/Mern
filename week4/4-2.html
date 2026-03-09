@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Max of Three</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("Enter 1st num: "))
+        let b = parseInt(prompt("Enter 2nd num: "))
+        let c = parseInt(prompt("Enter 1st num: "))
+        let max;
+        if(a>b && a>c) {max = a}
+        else if(b>a && b>c) {max = b}
+        else if(c>a && c>b) {max = c}
+        if(max===undefined) {document.write("EQUAL NUMBERS")}
+        else {document.write(`${max} is maximum of three`)}
+    </script>
+</body>
+</html>
